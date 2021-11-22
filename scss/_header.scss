@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 $mobile_spacingX;
+}
+
+.logo_container {
+    height: 100%;
+
+    img:nth-child(1) {
+        height: 100%;
+        transform: translateY(-1px);
+        object-fit: contain;
+    }
+
+    img:nth-child(2) {
+        display: none;
+    } 
+}
+
+.menu_container {
+    display: none;
+}
+
+.burger {
+    cursor: pointer;    
+    z-index: 20;
+    padding: 0 $mobile_spacingX;
+    
+    div {
+        width: 2rem;
+        height: 0.25rem;
+        background: $dark_blue;
+        border-radius: 0.75rem;
+    }
+
+    div:nth-child(2) {
+        margin: 0.5rem 0;
+    }
+}

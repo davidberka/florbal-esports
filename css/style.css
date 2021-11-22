@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.3125rem;
+  font-weight: 800;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.44;
+}
+
+a {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  padding: 0.4rem 0.6rem;
+  background: #25a5d2;
+  border-radius: 4px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 0.75rem;
+}
+
+.logo_container {
+  height: 100%;
+}
+.logo_container img:nth-child(1) {
+  height: 100%;
+  transform: translateY(-1px);
+  object-fit: contain;
+}
+.logo_container img:nth-child(2) {
+  display: none;
+}
+
+.menu_container {
+  display: none;
+}
+
+.burger {
+  cursor: pointer;
+  z-index: 20;
+  padding: 0 0.75rem;
+}
+.burger div {
+  width: 2rem;
+  height: 0.25rem;
+  background: #213f7e;
+  border-radius: 0.75rem;
+}
+.burger div:nth-child(2) {
+  margin: 0.5rem 0;
+}
+
+.hp_main {
+  padding: 0 0.75rem;
+}
+
+.hp_hero {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.hp_hero_content {
+  margin-bottom: 2rem;
+}
+.hp_hero_content h3 {
+  color: #25a5d2;
+  margin-bottom: 0.5rem;
+}
+.hp_hero_content h1 {
+  color: #213f7e;
+  margin-bottom: 0.5rem;
+}
+.hp_hero_content p {
+  color: #6076a3;
+  margin-bottom: calc(0.5rem + 1rem);
+}
+
+.hp_hero_img_container {
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

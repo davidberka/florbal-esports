@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 1.3125rem;
+    font-weight: 800;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 1.44;
+}
+
+a {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    padding: 0.4rem 0.6rem;
+    background: $light_blue;
+    border-radius: 4px;
+}
+
+img {
+    max-width: 100%;
+}

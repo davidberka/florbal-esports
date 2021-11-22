@@ -1,0 +1,32 @@
+.hp_main {
+    padding: 0 $mobile_spacingX;
+}
+
+.hp_hero {
+    padding: $mobile_sectionSpacingY 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.hp_hero_content {
+    margin-bottom: $mobile_sectionSpacingY;
+    h3 {
+        color: $light_blue;
+        margin-bottom: $mobile_textSpacing;
+    }
+
+    h1 {
+        color: $dark_blue;
+        margin-bottom: $mobile_textSpacing;
+    }
+
+    p {
+        color: $medium_blue;
+        margin-bottom: calc(#{$mobile_textSpacing} + 1rem);
+    }
+}
+
+.hp_hero_img_container {
+    display: flex;
+    justify-content: center;
+}
