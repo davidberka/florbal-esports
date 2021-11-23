@@ -2,13 +2,13 @@
     padding: 0 $mobile_spacingX;
 }
 
-.hp_hero {
+.hp_hero, .hp_about {
     padding: $mobile_sectionSpacingY 0;
     display: flex;
     flex-direction: column;
 }
 
-.hp_hero_content {
+.hp_hero_content, .hp_about_content {
     margin-bottom: $mobile_sectionSpacingY;
     h3 {
         color: $light_blue;
@@ -22,11 +22,15 @@
 
     p {
         color: $medium_blue;
-        margin-bottom: calc(#{$mobile_textSpacing} + 1rem);
+        margin-bottom: 1.5rem;
     }
 }
 
-.hp_hero_img_container {
+.hp_hero_img_container, .hp_about_img_container {
     display: flex;
     justify-content: center;
+}
+
+.hp_about {
+    flex-direction: column-reverse;
 }

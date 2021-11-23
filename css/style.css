@@ -80,31 +80,35 @@ img {
   padding: 0 0.75rem;
 }
 
-.hp_hero {
+.hp_hero, .hp_about {
   padding: 2rem 0;
   display: flex;
   flex-direction: column;
 }
 
-.hp_hero_content {
+.hp_hero_content, .hp_about_content {
   margin-bottom: 2rem;
 }
-.hp_hero_content h3 {
+.hp_hero_content h3, .hp_about_content h3 {
   color: #25a5d2;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
-.hp_hero_content h1 {
+.hp_hero_content h1, .hp_about_content h1 {
   color: #213f7e;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
-.hp_hero_content p {
+.hp_hero_content p, .hp_about_content p {
   color: #6076a3;
-  margin-bottom: calc(0.5rem + 1rem);
+  margin-bottom: 1.5rem;
 }
 
-.hp_hero_img_container {
+.hp_hero_img_container, .hp_about_img_container {
   display: flex;
   justify-content: center;
+}
+
+.hp_about {
+  flex-direction: column-reverse;
 }
 
 /*# sourceMappingURL=style.css.map */
