@@ -1,3 +1,14 @@
 .news {
-    
+    padding: $mobile_sectionSpacingY 0;
+}
+
+.news_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $mobile_textSpacing;
+
+    h1 {
+        color: $dark_blue;
+    }
 }

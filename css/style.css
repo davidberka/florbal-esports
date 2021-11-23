@@ -111,4 +111,18 @@ img {
   flex-direction: column-reverse;
 }
 
+.news {
+  padding: 2rem 0;
+}
+
+.news_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+.news_header h1 {
+  color: #213f7e;
+}
+
 /*# sourceMappingURL=style.css.map */
