@@ -13,6 +13,11 @@ h1 {
     font-weight: 800;
 }
 
+h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
 h3 {
     font-size: 1.3125rem;
     font-weight: 800;
@@ -23,15 +28,19 @@ p {
     line-height: 1.44;
 }
 
-a {
-    font-size: 1.125rem;
-    font-weight: 600;
-    text-decoration: none;
-    color: white;
-    padding: 0.4rem 0.6rem;
-    background: $light_blue;
-    border-radius: 4px;
+span {
+    font-size: 0.875rem;
+    font-weight: 800;
 }
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
 
 img {
     max-width: 100%;

@@ -1,0 +1,21 @@
+.partners {
+    padding: $mobile_sectionSpacingY 0;
+
+    h1 {
+        color: $dark_blue;
+        margin-bottom: $mobile_textSpacing;
+    }
+}
+
+.partners_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+
+    img {
+        width: 10rem;
+        height: 10rem;
+        object-fit: contain;
+    }
+}

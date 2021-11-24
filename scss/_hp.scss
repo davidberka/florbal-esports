@@ -24,6 +24,15 @@
         color: $medium_blue;
         margin-bottom: 1.5rem;
     }
+
+    a {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: white;
+        padding: 0.4rem 0.6rem;
+        background: $light_blue;
+        border-radius: 4px;
+    }
 }
 
 .hp_hero_img_container, .hp_about_img_container {
