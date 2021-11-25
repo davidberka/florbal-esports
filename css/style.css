@@ -170,8 +170,8 @@ img {
 .news_article > div:nth-child(2) h2 {
   color: #213f7e;
   font-weight: 400;
-  margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1.4rem;
 }
 .news_article > div:nth-child(2) a {
   background: none;
@@ -264,6 +264,47 @@ img {
 }
 .footer_container .row1 ul li a {
   color: white;
+}
+.footer_container .row2 {
+  display: flex;
+  flex-direction: column;
+}
+.footer_container .row2 > div:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.footer_container .row2 > div:nth-child(1) {
+  display: flex;
+}
+.footer_container .row2 > div:nth-child(1) img {
+  object-fit: contain;
+}
+.footer_container .row2 > div:nth-child(1) img:nth-child(1) {
+  margin-right: 2rem;
+}
+.footer_container .row2 > div:nth-child(2) h3, .footer_container .row2 > div:nth-child(3) h3 {
+  margin-bottom: 0.25rem;
+}
+.footer_container .row2 > div:nth-child(2) span, .footer_container .row2 > div:nth-child(3) span {
+  font-weight: 400;
+}
+.footer_container .row2 > div:nth-child(4) h3 {
+  margin-bottom: 0.75rem;
+}
+.footer_container .row2 > div:nth-child(4) > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer_container .row3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.footer_container .row3 span {
+  font-weight: 400;
+}
+.footer_container .row3 img {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
