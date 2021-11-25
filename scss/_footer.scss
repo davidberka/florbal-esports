@@ -1,33 +1,54 @@
 .footer {
     color: white;
     position: relative;
-    margin-top: 8rem;
-}
-
-.footer_bg_logo {
-    position: absolute;
-    left: 50%;
-    top: -26%;
-    transform: translateX(-50%);
-    width: 8rem;
-    height: 8rem;
-    object-fit: contain;
+    margin-top: 7rem;
 }
 
 .footer_bg {
+    position: relative;
+
+    .triangle1 {
+        width: 100%;
+        height: 5rem;
+        position: absolute;
+        top: -4.9rem;
+        left: 0;
+        z-index: 2;
+        background: $dark_blue;
+        clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    }
+
+    .triangle2 {
+        width: 75%;
+        height: 5rem;
+        position: absolute;
+        top: -4.95rem;
+        right: 0;
+        z-index: 1;
+        background: $light_blue;
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    }
+}
+
+.footer_bg_logo {
+    width: 8rem;
+    height: 8rem;
+    object-fit: contain;
     position: absolute;
-    inset: 0;
-    top: -20%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    top: -8.5rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .footer_container {
     padding: $mobile_sectionSpacingY $mobile_spacingX;
-    position: relative;
+    padding-top: 3rem;
     z-index: 2;
     background: $dark_blue;
+}
+
+.footer_content {
+    position: relative;
 
     & > div:not(:last-child) {
         margin-bottom: 2rem;
@@ -118,6 +139,65 @@
         }
         img {
             display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .footer_content {
+        width: 85%;
+        margin: 0 auto;
+
+        .row2 {
+            gap: 2rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            & > div:not(:last-child) {
+                margin-bottom: 0;
+            }
+        }
+
+        .row3 {
+            padding-top: $mobile_sectionSpacingY;
+            border-top: solid 1px rgba(255, 255, 255, 0.16);
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                display: block;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .footer {
+        margin-top: 9rem;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .footer {
+        margin-top: 11rem;
+    }
+
+    .footer_bg_logo {
+        top: -11rem;
+    }
+
+    .footer_bg {
+        .triangle1, .triangle2 {
+            height: 10rem;
+        }
+
+        .triangle1 {
+            top: -9.9rem;
+        }
+
+        .triangle2 {
+            top: -9.95rem;
+            width: 85%;
         }
     }
 }
