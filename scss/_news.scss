@@ -86,3 +86,18 @@
         width: 250px;
     }
 }
+
+@media only screen and (min-width: 1536px) {
+    .news {
+        padding-top: 0;
+        padding-bottom: $lgLaptop_sectionSpacingY;
+    }
+
+    .news_header {
+        margin-bottom: $lgLaptop_textSpacing;
+    }
+
+    .news_article {
+        width: 340px;
+    }
+}

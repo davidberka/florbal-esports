@@ -54,7 +54,7 @@ img {
   top: 0;
   left: 0;
   background-image: linear-gradient(to bottom, #fff, #e9f6fa);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 77%);
 }
 
 .bg_figure {
@@ -67,8 +67,27 @@ img {
         position: absolute;
         left: 0;
         top: 5rem;
-        height: 60vh;
+        height: 30rem;
         width: 100%;
         object-fit: contain;
+    }
+
+    .bg_rec {
+        height: 37rem;
+    }
+}
+
+@media only screen and (min-width: 1536px) {
+    h1 {
+        font-size: 3.75rem;
+    }
+
+    .bg_rec {
+        height: 62rem;
+    }
+
+    .bg_figure {
+        height: 55rem;
+        width: 90%;
     }
 }

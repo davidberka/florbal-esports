@@ -108,3 +108,49 @@
         }
     }
 }
+
+@media only screen and (min-width: 1536px) {
+    .hp_main {
+        width: 80%;
+    }
+
+    .hp_hero {
+        padding: $lgLaptop_sectionSpacingY 0;
+        height: 100vh;
+    }
+
+    .hp_about {
+        padding-top: 0;
+        padding-bottom: $lgLaptop_sectionSpacingY;
+    }
+
+    .hp_about_content {
+        margin-left: 3rem;
+    }
+
+
+    .hp_hero_content, .hp_about_content {
+        margin-bottom: 0;
+        h3 {
+            margin-bottom: $lgLaptop_textSpacing;
+        }
+
+        h1 {
+            margin-bottom: $lgLaptop_textSpacing;
+        }
+
+        p {
+            margin-bottom: 2.5rem;
+        }
+
+        a {
+            padding: .75rem 2rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .hp_main {
+        width: 75%;
+    }
+}

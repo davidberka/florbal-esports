@@ -19,3 +19,18 @@
         object-fit: contain;
     }
 }
+
+@media only screen and (min-width: 1536px) {
+    .partners {
+        padding-top: 0;
+        padding-bottom: $lgLaptop_sectionSpacingY;
+
+        h1 {
+            margin-bottom: $lgLaptop_textSpacing;
+        }
+    }
+
+    .partners_container {
+        gap: 2rem;
+    }
+}
