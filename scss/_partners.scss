@@ -29,6 +29,12 @@
 
 }
 
+@media only screen and (min-width: 1280px) {
+    h1 {
+        text-align: center;
+    }
+}
+
 @media only screen and (min-width: 1536px) {
     .partners {
         padding-top: 0;
