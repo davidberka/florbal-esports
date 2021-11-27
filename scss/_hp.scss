@@ -43,7 +43,52 @@
     }
 }
 
-.hp_hero_img_container, .hp_about_img_container {
+.hp_hero_img_container {
+    height: 14.7rem;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.hp_hero_img_inner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+
+    & > div {
+        position: absolute;
+        filter: drop-shadow(1px 10px 10px rgba(33, 63, 126, 0.18));
+
+        img {
+            object-fit: cover;
+            height: 100%;
+        }
+
+        &:nth-child(1) {
+            width: 75%;
+            height: 100%;
+            top: 0;
+            left: 0;
+
+            img {
+                clip-path: polygon(0 0, 100% 0%, 100% 70%, 0% 100%);
+            }
+        }
+
+        &:nth-child(2) {
+            width: 50%;
+            height: 70%;
+            right: 0;
+            bottom: 0;
+
+            img {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);
+            }
+        }
+    }
+}
+
+.hp_about_img_container {
     display: flex;
     justify-content: center;
 }
@@ -58,7 +103,12 @@
         margin: 0 auto;
     }
 
-    .hp_hero_img_container, .hp_about_img_container {
+    .hp_hero_img_container {
+        width: 50%;
+        height: 18rem;
+    }
+
+    .hp_about_img_container {
         img {
             width: 70%;
         }
@@ -66,7 +116,11 @@
 }
 
 @media only screen and (min-width: 1024px) {
-    .hp_hero_img_container, .hp_about_img_container {
+    .hp_hero_img_container {
+        width: 35%;
+    }
+
+    .hp_about_img_container {
         flex: 0.5;
         img {
             width: 50%;
@@ -77,11 +131,15 @@
 @media only screen and (min-width: 1280px) {
     .hp_hero {
         flex-direction: row;
-        height: 70vh;
+        height: 40rem;
     }
 
     .hp_about {
         flex-direction: row;
+    }
+
+    .hp_hero_content {
+        transform: translateX(32%);
     }
 
     .hp_hero_content, .hp_about_content {
@@ -90,13 +148,15 @@
 
     .hp_hero_img_container {
         flex: 0.5;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
 
-        img {
-            width: 75%;
-            height: 75%;
-            align-self: flex-end;
-            object-fit: contain;
-        }
+    .hp_hero_img_inner {
+        height: 55%;
+        width: 60%;
+        margin-left: auto;
     }
 
     .hp_about_img_container {
@@ -117,7 +177,12 @@
 
     .hp_hero {
         padding: $lgLaptop_sectionSpacingY 0;
-        height: 100vh;
+        height: 64.5rem;
+    }
+
+    .hp_hero_img_inner {
+        height: 50%;
+        width: 65%;
     }
 
     .hp_about {
@@ -153,5 +218,14 @@
 @media only screen and (min-width: 1920px) {
     .hp_main {
         width: 75%;
+    }
+
+    .hp_hero_img_inner {
+        width: 70%;
+        height: 55%;
+    }
+
+    .hp_hero_content h1, .hp_hero_content p {
+        width: 72%;
     }
 }

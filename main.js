@@ -7,3 +7,9 @@ burgerMenu.addEventListener("click", () => {
   burgerMenu.classList.toggle("active");
 });
 // MENU - END
+
+// SCROLL TO - START
+const scrollToTopBtn = document.querySelector('.scroll_up_btn');
+
+scrollToTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: "smooth" }))
+// SCROLL TO - END
