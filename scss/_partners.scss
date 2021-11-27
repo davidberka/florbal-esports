@@ -13,11 +13,20 @@
     flex-wrap: wrap;
     gap: 0.75rem;
 
-    img {
-        width: 10rem;
-        height: 10rem;
-        object-fit: contain;
+    a {
+        transition: all .2s ease-in;
+
+        &:hover {
+            filter: drop-shadow(rgba(149, 157, 165, 0.2) 0px 8px 24px);
+        }
+
+        img {
+            width: 10rem;
+            height: 10rem;
+            object-fit: contain;
+        }
     }
+
 }
 
 @media only screen and (min-width: 1536px) {

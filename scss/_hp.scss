@@ -34,6 +34,12 @@
         padding: 0.4rem 0.6rem;
         background: $light_blue;
         border-radius: 4px;
+        transition: all .15s ease-in;
+
+        &:hover {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            background: #0094ca;
+        }
     }
 }
 

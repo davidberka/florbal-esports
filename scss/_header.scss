@@ -8,6 +8,7 @@
 
 .logo_container {
     height: 100%;
+    z-index: 30;
 
     img:nth-child(1) {
         height: 100%;
@@ -60,7 +61,33 @@
 
             li {
                 font-weight: 800;
-                color: $dark_blue;
+
+                a {
+                    position: relative;
+                    color: $dark_blue;
+
+                    &::after {
+                        content: "";
+                        background: $light_blue;
+                        display: none;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        width: 0;
+                        height: 2px;
+                        transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+                    }
+
+                    &:hover {
+                        color: $light_blue;
+
+                        &::after {
+                            right: auto;
+                            width: 100%;
+                            left: 0;
+                        }
+                    }
+                }
             }
         }
     }
@@ -70,8 +97,46 @@
         display: flex;
         gap: 1rem;
 
-        img {
-            object-fit: contain;
+        a {
+            position: relative;
+            height: 18px;
+
+            &::after {
+                content: "";
+                display: none;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 0;
+                height: 2px;
+                transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+            }
+
+            &:nth-child(1)::after {
+                background: #FF0000;
+            }
+
+            &:nth-child(2)::after {
+                background: linear-gradient(to right, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+            }
+
+            &:nth-child(3)::after {
+                background: #1DA1F2;
+            }
+
+            &:nth-child(4)::after {
+                background: #4267B2;
+            }
+
+            &:hover::after {
+                right: auto;
+                width: 100%;
+                left: 0;
+            }
+
+            img {
+                object-fit: contain;
+            }
         }
     }
 }
@@ -86,10 +151,25 @@
         height: 0.25rem;
         background: $dark_blue;
         border-radius: 0.75rem;
+        transition: transform .2s ease-in;
     }
 
     div:nth-child(2) {
         margin: 0.5rem 0;
+    }
+
+    &.active {
+        div:nth-child(1) {
+            transform: rotate(45deg);
+        }
+
+        div:nth-child(2) {
+            display: none;
+        }
+
+        div:nth-child(3) {
+            transform: rotate(-45deg) translate(3px, -3px);
+        }
     }
 }
 
@@ -139,12 +219,29 @@
             ul {
                 flex-direction: row;
                 gap: 2rem;
+
+                li {
+                    a {
+                        padding-bottom: .3rem;
+                        &::after {
+                            display: block;
+                        }
+                    }
+                }
             }
         }
 
         .socialIcons_container {
             flex: 1;
             justify-content: flex-end;
+
+            a {
+                padding-top: .3rem;
+
+                &::after {
+                    display: block;
+                }
+            }
         }
     }
 }
@@ -162,6 +259,7 @@
         gap: 1.25rem;
 
         img:nth-child(1) {
+            transform: translateY(-2px);
         }
 
         img:nth-child(2) {
