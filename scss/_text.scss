@@ -1,28 +1,15 @@
-.article_main {
+.text_main {
     padding: 0 $mobile_spacingX;
 }
 
-.article_container {
+.text_container {
     margin: $mobile_sectionSpacingY 0;
 }
 
-.article_img_container {
-    filter: drop-shadow(1px 10px 10px rgba(33, 63, 126, 0.18));
-
-    img {
-        object-fit: cover;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);
-    }
-}
-
-.article_content {
-    span {
-        color: $medium_blue;
-    }
-
+.text_content {
     h1 {
         color: $dark_blue;
-        margin: $mobile_textSpacing 0;
+        margin-bottom: $mobile_textSpacing * 2;
     }
 
     .anotace {
@@ -102,7 +89,7 @@
     }
 }
 
-.article_share_container {
+.text_share_container {
     width: max-content;
     margin: 0 auto;
 
@@ -152,31 +139,30 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .article_main {
+    .text_main {
         width: 85%;
         margin: 0 auto;
     }
 
-    .article_container {
+    .text_container {
         background: white;
         box-shadow: 0 22px 64px 10px rgba(96, 118, 163, 0.11);
     }
 
-    .article_content {
-        padding: 0 2rem;
-        padding-bottom: 2rem;
+    .text_content {
+        padding: 2rem;
     }
 }
 
 @media only screen and (min-width: 1024px) {
-    .article_container {
+    .text_container {
         width: 675px;
         margin: $mobile_sectionSpacingY auto;
     }
 }
 
 @media only screen and (min-width: 1280px) {
-    .article_share_container > div a {
+    .text_share_container > div a {
         padding-bottom: .3rem;
 
         &::after {
@@ -186,31 +172,21 @@
 }
 
 @media only screen and (min-width: 1536px) {
-    .article_main {
+    .text_main {
         width: 80%;
     }
 
-    .article_container {
+    .text_container {
         width: 775px;
         margin: $lgLaptop_sectionSpacingY auto;
         margin-top: 1.1rem;
     }
 
-    .article_img_container {
-        height: 570px;
-
-        img {
-            height: 100%;
-            width: 100%;
-        }
-    }
-
-    .article_content {
-        padding: 0 3rem;
-        padding-bottom: 3rem;
+    .text_content {
+        padding: 3rem;
 
         h1 {
-            margin-bottom: $lgLaptop_textSpacing;
+            margin-bottom: $lgLaptop_textSpacing * 2;
         }
 
         .anotace {
@@ -251,22 +227,22 @@
         }
     }
 
-    .article_share_container {
+    .text_share_container {
         margin: $lgLaptop_sectionSpacingY auto;
         margin-top: 0;
     }
 }
 
 @media only screen and (min-width: 1920px) {
-    .article_main {
+    .text_main {
         width: 75%;
     }
 
-    .article_container {
+    .text_container {
         width: 940px;
     }
 
-    .article_content .typo_imgAndText {
+    .text_content .typo_imgAndText {
         & > div:nth-child(1) {
             flex: .2;
         }

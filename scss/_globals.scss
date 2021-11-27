@@ -55,6 +55,10 @@ img {
   left: 0;
   background-image: linear-gradient(to bottom, #fff, #e9f6fa);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 77%);
+
+  &.article {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+  }
 }
 
 .bg_figure {
@@ -75,6 +79,10 @@ img {
 
     .bg_rec {
         height: 37rem;
+
+        &.article {
+            height: 20rem;
+        }
     }
 }
 
@@ -85,6 +93,10 @@ img {
 
     .bg_rec {
         height: 62rem;
+
+        &.article {
+            height: 30rem;
+        }
     }
 
     .bg_figure {
