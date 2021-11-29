@@ -1,9 +1,9 @@
 .news {
     margin: $mobile_sectionSpacingY 0;
+    margin-top: 0;
 
     &.archive {
-        padding: 2rem;
-        padding-bottom: 3rem;
+        margin-top: $mobile_sectionSpacingY;
     }
 }
 
@@ -151,7 +151,10 @@
     .news.archive {
         background: white;
         box-shadow: 0 22px 64px 10px rgba(96, 118, 163, 0.11);
+        padding: 2rem;
+        padding-bottom: 3rem;
     }
+
     .news_container {
         width: 60%;
         margin: 0 auto;
@@ -159,6 +162,11 @@
 }
 
 @media only screen and (min-width: 1024px) {
+    .news.archive {
+        width: 75%;
+        margin: $mobile_sectionSpacingY auto;
+    }
+
     .news_container {
         width: 100%;
         flex-direction: row;
@@ -171,9 +179,14 @@
     }
 }
 
+@media only screen and (min-width: 1280px) {
+    .news.archive {
+        width: 80%;
+    }
+}
+
 @media only screen and (min-width: 1536px) {
     .news {
-        margin-top: 0;
         margin-bottom: $lgLaptop_sectionSpacingY;
 
         &.archive {
