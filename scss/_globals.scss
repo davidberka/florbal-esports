@@ -69,6 +69,14 @@ img {
     display: none;
 }
 
+.stretched_link {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
 @media only screen and (min-width: 1280px) {
     .bg_figure {
         display: block;
