@@ -25,6 +25,11 @@
         margin: $mobile_textSpacing 0;
     }
 
+    h2 {
+        color: $dark_blue;
+        margin-bottom: $mobile_textSpacing;
+    }
+
     .anotace {
         color: $medium_blue;
         font-size: 1.3rem;
@@ -77,26 +82,20 @@
         }
     }
 
+    
     .typo_list {
         margin-bottom: 2rem;
 
-        h2 {
-            color: $dark_blue;
-            margin-bottom: $mobile_textSpacing;
-        }
+        li {
+            font-size: 1.125rem;
+            color: $medium_blue;
 
-        ul {
-            li {
-                font-size: 1.125rem;
-                color: $medium_blue;
+            &:not(:last-child) {
+                margin-bottom: $mobile_textSpacing;
+            }
 
-                &:not(:last-child) {
-                    margin-bottom: $mobile_textSpacing;
-                }
-
-                img {
-                    margin-right: $mobile_textSpacing;
-                }
+            img {
+                margin-right: $mobile_textSpacing;
             }
         }
     }

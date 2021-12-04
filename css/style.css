@@ -1124,6 +1124,10 @@ img {
   color: #213f7e;
   margin: 0.75rem 0;
 }
+.article_content h2 {
+  color: #213f7e;
+  margin-bottom: 0.75rem;
+}
 .article_content .anotace {
   color: #6076a3;
   font-size: 1.3rem;
@@ -1170,18 +1174,14 @@ img {
 .article_content .typo_list {
   margin-bottom: 2rem;
 }
-.article_content .typo_list h2 {
-  color: #213f7e;
-  margin-bottom: 0.75rem;
-}
-.article_content .typo_list ul li {
+.article_content .typo_list li {
   font-size: 1.125rem;
   color: #6076a3;
 }
-.article_content .typo_list ul li:not(:last-child) {
+.article_content .typo_list li:not(:last-child) {
   margin-bottom: 0.75rem;
 }
-.article_content .typo_list ul li img {
+.article_content .typo_list li img {
   margin-right: 0.75rem;
 }
 
