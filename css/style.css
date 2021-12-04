@@ -1282,6 +1282,9 @@ img {
   .article_content h1 {
     margin-bottom: 1.25rem;
   }
+  .article_content h2 {
+    margin-bottom: 1.25rem;
+  }
   .article_content .anotace {
     font-size: 1.5rem;
     line-height: 1.58;
