@@ -395,46 +395,7 @@ img {
   background: #0094ca;
 }
 
-.hp_hero_img_container {
-  height: 14.7rem;
-  width: 75%;
-  margin: 0 auto;
-}
-
-.hp_hero_img_inner {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  position: relative;
-}
-.hp_hero_img_inner > div {
-  position: absolute;
-  filter: drop-shadow(1px 10px 10px rgba(33, 63, 126, 0.18));
-}
-.hp_hero_img_inner > div img {
-  object-fit: cover;
-  height: 100%;
-}
-.hp_hero_img_inner > div:nth-child(1) {
-  width: 75%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-.hp_hero_img_inner > div:nth-child(1) img {
-  clip-path: polygon(0 0, 100% 0%, 100% 70%, 0% 100%);
-}
-.hp_hero_img_inner > div:nth-child(2) {
-  width: 50%;
-  height: 70%;
-  right: 0;
-  bottom: 0;
-}
-.hp_hero_img_inner > div:nth-child(2) img {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);
-}
-
-.hp_about_img_container {
+.hp_hero_img_container, .hp_about_img_container {
   display: flex;
   justify-content: center;
 }
@@ -449,9 +410,8 @@ img {
     margin: 0 auto;
   }
 
-  .hp_hero_img_container {
-    width: 50%;
-    height: 18rem;
+  .hp_hero_img_container img {
+    width: 64%;
   }
 
   .hp_about_img_container img {
@@ -459,8 +419,8 @@ img {
   }
 }
 @media only screen and (min-width: 1024px) {
-  .hp_hero_img_container {
-    width: 35%;
+  .hp_hero_img_container img {
+    width: 45%;
   }
 
   .hp_about_img_container {
@@ -493,12 +453,10 @@ img {
     height: 100%;
     display: flex;
     align-items: flex-end;
+    justify-content: flex-end;
   }
-
-  .hp_hero_img_inner {
-    height: 55%;
-    width: 60%;
-    margin-left: auto;
+  .hp_hero_img_container img {
+    width: 70%;
   }
 
   .hp_about_img_container {
@@ -520,9 +478,9 @@ img {
     height: 64.5rem;
   }
 
-  .hp_hero_img_inner {
-    height: 50%;
-    width: 65%;
+  .hp_hero_img_container img {
+    width: 80%;
+    max-width: 550px;
   }
 
   .hp_about {
@@ -553,11 +511,6 @@ img {
 @media only screen and (min-width: 1920px) {
   .hp_main {
     width: 75%;
-  }
-
-  .hp_hero_img_inner {
-    width: 70%;
-    height: 55%;
   }
 
   .hp_hero_content h1, .hp_hero_content p {
